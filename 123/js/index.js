@@ -35,6 +35,7 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
         navigator.splashscreen.hide();
+		
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -46,5 +47,10 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
-    }
+		
+		
+    },
+	go: function(){console.log("Working");
+		alert("1");
+	}
 };
